@@ -83,7 +83,7 @@ def pregunta_03():
     from sklearn.compose import make_column_selector
     from sklearn.compose import make_column_transformer
 
-    pipeline = pipeline(
+    pipeline = Pipeline(
         steps=[
             # Paso 1: Construya un column_transformer que aplica OneHotEncoder a las
             # variables categóricas, y no aplica ninguna transformación al resto de
@@ -147,7 +147,7 @@ def pregunta_04():
     """
 
     # Importe mean_squared_error
-    from sklearn.metrics    import mean_squared_error
+    from sklearn.metrics import mean_squared_error
 
     # Obtenga el pipeline optimo de la pregunta 3.
     gridSearchCV = pregunta_03()
